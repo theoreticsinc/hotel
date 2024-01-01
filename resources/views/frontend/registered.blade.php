@@ -6,7 +6,7 @@
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="index.html">Book</a>
+                    <a href="#">Book</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
                 <li>Reserved</li>

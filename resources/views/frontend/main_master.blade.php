@@ -4,7 +4,7 @@
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
+ 
         <!-- Bootstrap CSS --> 
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
         <!-- Animate Min CSS -->
@@ -33,8 +33,12 @@
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{ asset('frontend/assets/img/favicon.png') }}">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
-        <title>ParkNFly</title>
+
+        	<!-- toastr CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+    <!-- toastr CSS -->
+
+        <title>Easy Hotel </title>
     </head>
     <body>
 
@@ -53,11 +57,16 @@
         </div>
         <!-- PreLoader End -->
 
+        <!-- Top Header Start -->
+        @include('frontend.body.header')
+        <!-- Top Header End -->
+
         <!-- Start Navbar Area -->
         @include('frontend.body.navbar')
         <!-- End Navbar Area -->
 
         @yield('main')
+
         <!-- Footer Area -->
         @include('frontend.body.footer')
         <!-- Footer Area End -->
@@ -112,5 +121,7 @@
  }
  @endif 
 </script>
+
+
     </body>
 </html>

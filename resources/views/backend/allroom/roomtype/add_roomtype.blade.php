@@ -15,13 +15,13 @@
 							</ol>
 						</nav>
 					</div>
-
+					 
 				</div>
 				<!--end breadcrumb-->
 				<div class="container">
 					<div class="main-body">
 						<div class="row">
-
+						 
     <div class="col-lg-8">
         <div class="card">
 
@@ -37,8 +37,8 @@
                         <input type="text" name="name" class="form-control"  />
                     </div>
                 </div>
-
-
+                
+                 
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-9 text-secondary">
@@ -49,7 +49,7 @@
         </form>
 
         </div>
-
+            
 
 
     </div>
@@ -95,6 +95,7 @@
 
 
       <script type="text/javascript">
+
         $(document).ready(function(){
             $('#image').change(function(e){
                 var reader = new FileReader();
@@ -104,7 +105,10 @@
                 reader.readAsDataURL(e.target.files['0']);
             });
         });
+
         </script>   
         
         
+
+
 @endsection

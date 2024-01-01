@@ -29,22 +29,20 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-        
+
         $id = Auth::user()->id;
         $profileData = User::find($id);
         $username = $profileData->name;
 
         $notification = array(
-            'message' => 'User '.$username.'Login Successfully',
+            'message' => 'User '.$username.' Login Successfully',
             'alert-type' => 'info'
         );
 
         $url = '';
         if($request->user()->role === 'admin'){
             $url = '/admin/dashboard';
-
-        }else if($request->user()->role === 'user'){
-
+        } elseif($request->user()->role === 'user'){
             $url = '/dashboard';
         }
 
